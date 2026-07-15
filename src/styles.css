@@ -156,9 +156,7 @@ button {
   --planet-size: 458px;
 }
 
-/* Internal structure image made from 2 images:
-   1. normal planet
-   2. exported guts/internal image on right side */
+/* Internal structure for normal planets */
 .internal-wrapper {
   position: relative;
   width: var(--planet-size, 290px);

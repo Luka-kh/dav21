@@ -83,6 +83,18 @@ const images = {
 function PlanetImage({ planet, activeTab }: PlanetImageProps) {
   const planetImages = images[planet.name];
 
+  if (activeTab === 'structure' && planet.name === 'Saturn') {
+    return (
+      <div className="planet-visual planet-visual--saturn">
+        <img
+          className="planet-visual__main"
+          src={planetImages.planet}
+          alt="Saturn planet"
+        />
+      </div>
+    );
+  }
+
   return (
     <div className={`planet-visual planet-visual--${planet.name.toLowerCase()}`}>
       {activeTab === 'structure' ? (
